@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row" *ngFor="let product of productdetail">
+      <div class="col-3" style="padding:10px" >
+      <div class="card">
+       <img class="card-img-top" src="{{product.product_image}}" alt="Card image cap" >
+      <div class="card-body">
+      <a href="#" class="btn btn-primary" style="margin:5px">Add to Cart</a>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+      </div>
+    </div>
+    <div class="col-9" style="padding:10px">
+          <div class="card" >
+          <div class="card-body">
+          <h1 class="card-title">{{product.product_name | uppercase}}</h1>
+          <h2 class="card-text">Price:{{product.price | currency:"INR"}}</h2>
+          <p class="card-text"><strong>Discount:</strong>{{product.discount | titlecase}}</p>
+          <p class="card-text"><strong>description:</strong>{{product.description}}</p>
+          </div>
+          
+                    </div>
+          
+              </div>
+          
+          </div>
+
+          </div>
+
+
+
+        
+      
+     

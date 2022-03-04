@@ -1,0 +1,36 @@
+/* body {
+  background-color: aqua;
+} */
+
+.card {
+  margin: auto;
+  margin-top: 5%;
+  border: none;
+  width: 400px;
+  padding: 20px;
+  float: auto;
+  top: 5%;
+  left: 100%;
+  background: linear-gradient(#6489c0, #9198e5);
+}
+.background {
+  float: right;
+}
+.terms {
+  text-align: left;
+}
+
+.promo {
+  float: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+span.help-block {
+  color: red;
+}

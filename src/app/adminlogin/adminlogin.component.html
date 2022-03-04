@@ -1,0 +1,36 @@
+<div class="background">
+</div>
+<div class="container" >
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card">
+              <div class="text-center">
+                  <h1> Admin Login</h1>
+
+                  <form class="formcon" method="POST" #form="ngForm" (ngSubmit)="onSubmit()"> <!-- event emitter for the "ngSubmit" event-->
+                          <div class="form-group">
+                            <label for="email">Username:  </label>
+                            <input type="email" class="form-control" id="email" ngModel name="email"  aria-describedby="emailHelp" placeholder="Enter email" required #email="ngModel">
+                  
+                            <span class="help-block" *ngIf=" email.invalid && email.touched"> Email is invalid!</span>
+
+                          </div>
+
+                          <br>
+                          <div class="form-group">
+                            <label for="password" >Password: </label>
+                            <input type="password" ngModel name="password" class="form-control" id="password" placeholder="Password" required #password="ngModel">
+                            <span class="help-block" *ngIf=" password.invalid && password.touched"> Password is invalid!</span>
+
+                          </div>
+                          <BR>
+
+                          <div>
+                            <button type="submit" class="btn btn-primary" [routerLink]="['/adminproduct']">LOGIN</button>
+                          </div>
+                        </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
